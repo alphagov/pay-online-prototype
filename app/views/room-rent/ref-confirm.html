@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">{{ serviceName }}</h1>
+
+		  <div class="panel panel-border-wide">
+
+	      <p>
+	         You owe:
+	      </p>
+	      
+	      <strong class="bold-xlarge">£4,6432</strong>
+
+
+			  <table>
+			    <thead>
+			      <tr>
+			        <th colspan="2">More details</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Product</td>
+			        <td>Venue hire</td>
+			      </tr>
+			      <tr>
+			        <td>Quantity</td>
+			        <td>1 day</td>
+			      </tr>
+			     	<tr>
+			        <td>Date</td>
+			        <td>17/04/2016</td>
+			      </tr>
+			      <tr>
+			        <td>Bill to</td>
+			        <td>George Michael</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+
+      <div class="form-download">
+      	<p>
+		      <a href="#">Download Invoice (PDF)</a>
+		    </p>
+	    </div>
+
+      <button class="button">Make payment</button>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
