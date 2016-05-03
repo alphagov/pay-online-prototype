@@ -39,6 +39,25 @@ router.get('/examples/over-18', function (req, res) {
 
 });
 
+router.get('/pay/choose-payment', function (req, res) {
+
+  // get the answer from the query string (eg. ?over18=false)
+  var radioGroup = req.query['radio-group'];
+
+  if (radioGroup){
+
+    // redirect to the relevant page
+    res.redirect("/pay/"+radioGroup);
+
+  } else {
+
+    // if radio-group is any other value (or is missing) render the page requested
+    res.render('pay/choose-payment');
+
+  }
+
+});
+
 // add your routes here
 
 module.exports = router;

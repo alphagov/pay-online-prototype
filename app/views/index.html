@@ -10,9 +10,18 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">{{ serviceName }}</h1>
+      <h1 class="heading-xlarge">{{ serviceName.main }}</h1>
 
-      <p>Use this service to pay for a venue you have hired and used.</p>
+      <h2 class="heading-medium">Customer facing</h2>
+      
+		  <h3>User has received a ref number and the following URL:</h3>
+      <li class="bullet list"><a href="/room-rent">{{ serviceName.roomRent}}</a></li>
+		   	
+		  <h3>User needs to pay before using a thing, goes to the following URL:</h3>
+      <li class="bullet list"><a href="/embassy-fees">{{ serviceName.embassyFees}}</a></li>
+
+	   	<h2 class="heading-medium">Business facing</h2>
+
 
     </div>
   </div>

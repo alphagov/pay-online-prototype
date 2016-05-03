@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/examples/">Back</a>
+
+      <h1 class="heading-large">
+        Which service will you use?
+      </h1>
+
+      <div class="form-group">
+        <div class="form-group">
+          <label class="form-label" for="service-selector">
+            Find the service(s) you want to pay for
+          </label>
+
+          <select name="Service" id="service-selector" autofocus="autofocus" autocorrect="off" autocomplete="off" class="auto-suggest form-control">
+            <option value="" selected="selected">Select Service</option>
+            <option value="Legalise a signature or seal">Legalise a signature or seal</option>
+            <option value="Witness a signature">Witness a signature</option>
+            <option value="Solemnise a marriage">Solemnise a marriage</option>
+          </select>
+
+        </div>
+      </div>
+
+      <a class="button" href="/embassy-fees/confirm">Next</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
