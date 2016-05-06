@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block page_title %}
+	GOV.UK prototype kit
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	<div class="grid-row">
+		<div class="column-quarter">
+			<div class="left-nav">
+				<ul>
+					<li><a href="http://pay-staff-tool.herokuapp.com/staff-dashboard">Dashboard</a></li>
+					<li><a href="transactions">Transactions &amp; Invoices</a></li>
+					<li><a href="upload-invoices">Upload Invoices</a></li>
+					<li><a href="http://pay-staff-tool.herokuapp.com/staff-dashboard#">API keys</a></li>
+					<li><a href="http://pay-staff-tool.herokuapp.com/staff-dashboard#">Manage your team</a></li>
+					<li><a href="http://pay-staff-tool.herokuapp.com/staff-dashboard#">Settings</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="column-three-quarters">
+			<div class="grid-row padding-grid-row">
+				<h1 class="heading-large underline">Upload invoices</h1>
+			</div>
+
+			<p>Upload invoice details to generate reference numbers that you can send to your users.</p>
+
+			<button class="button">Upload CSV</button>
+
+			<h2 class="heading-medium">Example CSV</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Amount owed</th>
+					</tr>
+				</thead>
+			</table>				
+		</div>
+	</div>
+</main>
+{% endblock %}
