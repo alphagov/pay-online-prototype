@@ -8,7 +8,8 @@ module.exports = {
   serviceName: {
   	main : "Pay online for offline services",
   	roomRent : "Pay for hiring a government venue",
-  	embassyFees : "Pay for a British Embassy service"
+  	embassyFees : "Pay for a British Embassy service",
+    admin : "Admin dashboard"
   },
 
 
