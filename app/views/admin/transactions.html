@@ -6,18 +6,9 @@
 	<link href="/public/stylesheets/copied-from-admin.css" media="screen" rel="stylesheet" type="text/css" />
 	<main id="content" role="main">
 	<div class="grid-row">
-		<div class="column-quarter">
-			<div class="left-nav">
-				<ul>
-					<li><a href="http://pay-staff-tool.herokuapp.com/staff-dashboard">Dashboard</a></li>
-					<li><a href="#">Transactions &amp; Invoices</a></li>
-					<li><a href="upload-invoices">Upload Invoices</a></li>
-					<li><a href="http://pay-staff-tool.herokuapp.com/staff-transaction-list#">API keys</a></li>
-					<li><a href="http://pay-staff-tool.herokuapp.com/staff-transaction-list#">Manage your team</a></li>
-					<li><a href="http://pay-staff-tool.herokuapp.com/staff-transaction-list#">Settings</a></li>
-				</ul>
-			</div>
-		</div>
+
+		{% include "includes/admin-nav.html" %}
+
 		<div class="column-three-quarters">
 			<h1 class="heading-large underline">Transactions and Invoices</h1>
 			<div class="overview">
