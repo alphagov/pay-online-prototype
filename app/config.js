@@ -6,9 +6,9 @@ module.exports = {
 
   // Service name used in header. Eg: 'Renew your passport'
   serviceName: {
-  	main : "Pay online for offline services",
+  	main : "Pay your fee online",
   	roomRent : "Pay for hiring a government venue",
-  	embassyFees : "Pay for a British Embassy service",
+  	embassyFees : "Pay your application fee",
     admin : "Admin dashboard"
   },
 
