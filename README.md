@@ -1,3 +1,5 @@
+> As of September 2021 this repository is no longer actively maintained by the GOV.UK Pay team.
+
 # GOV.UK Prototype kit
 
 ## News
